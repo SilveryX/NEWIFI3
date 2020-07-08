@@ -41,9 +41,9 @@ jobs:
         TNAME: "NEWIFI3"
       run: |
         cd /opt/rt-n56u/trunk/user/shared
-        sed 's/192.168.2/192.168.1/g' defaults.h
-        sed 's/ASUS/Silvery/g' defaults.h
-        sed 's/1234567890/mkd1230.+/g' defaults.h
+        sed -i 's/192.168.2/192.168.1/g' defaults.h
+        sed -i 's/ASUS/Silvery/g' defaults.h
+        sed -i 's/1234567890/mkd1230.+/g' defaults.h
         cd /opt/rt-n56u/trunk
         if [ ! -f configs/templates/$TNAME.config ] ; then
         echo "configs/templates/$TNAME.config not found "
