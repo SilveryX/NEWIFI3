@@ -1,3 +1,3 @@
-# newifi3
+# NEWIFI3
 
-自动编译
+NEWIFI3 Padavan固件自动编译
